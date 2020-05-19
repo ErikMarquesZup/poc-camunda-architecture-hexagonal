@@ -1,1 +1,1 @@
-# poc-camunda-architecture-hexagonal
+# PoC Camunda BPM - Hexagonal Architecture

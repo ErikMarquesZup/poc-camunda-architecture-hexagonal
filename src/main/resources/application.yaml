@@ -1,0 +1,45 @@
+spring.application.name: simpleApplication
+spring:
+  image: postgres
+  environment:
+    POSTGRES_PASSWORD: "Postgres2019!"
+  ports:
+    - "15432:5432"
+  volumes:
+    - ../Docker-Compose/PostgreSQL:/var/lib/postgresql/data
+    -
+  datasource:
+    url: jdbc:postgresql://localhost:5432/journey
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+
+camunda:
+  bpm:
+    webapp:
+      index-redirect-enabled: true
+    admin-user:
+      id: root
+      password: root
+    application:
+      delete-upon-undeploy: false
+      scan-for-process-definitions: false
+      deploy-changed-only: true
+      resume-previous-versions: true
+      resume-previous-by: a value
+    job-execution:
+      enabled: true
+    metrics:
+      enabled: false
+      db-reporter-activate: false
+    database:
+      type: postgres
+
+
+
+
