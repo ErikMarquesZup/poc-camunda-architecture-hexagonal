@@ -11,9 +11,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(
-        basePackages = {"br.com"}
-)
 @Slf4j
 public class AdapterManagementJourneyApplication implements CommandLineRunner {
 
