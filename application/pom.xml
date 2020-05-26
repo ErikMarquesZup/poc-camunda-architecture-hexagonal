@@ -10,12 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>application</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>org.camunda.getstarted</groupId>
-            <artifactId>adapter-kafka</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+
+
 </project>
