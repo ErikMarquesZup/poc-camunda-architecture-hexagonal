@@ -1,0 +1,7 @@
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/ProducerImpl.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/message/DomainEvent.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/message/StartJourney.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/constants/TypeComponent.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/Producer.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/message/MessageKafka.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/infrastructure/adapter-producer-commands/src/main/java/br/com/management/kafka/configuration/KafkaConfig.java

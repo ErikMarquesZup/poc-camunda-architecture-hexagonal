@@ -3,13 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>org.camunda.getstarted</groupId>
+        <groupId>br.com.camunda.bpmn.getstarted</groupId>
         <artifactId>poc-camunda-architecture-hexagonal</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>infrastructure</artifactId>
 
+    <properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
+
+    <modules>
+        <module>adapter-producer-commands</module>
+        <module>adapter-consumer-commands</module>
+        <module>adapter-management-journey</module>
+    </modules>
 
 </project>

@@ -1,0 +1,6 @@
+br/com/hexagonal/architecture/journey/controller/Journey.class
+br/com/hexagonal/architecture/journey/service/StartJourneyService.class
+br/com/hexagonal/architecture/journey/request/JourneyStartRequest$JourneyStartRequestBuilder.class
+br/com/hexagonal/architecture/journey/AdapterManagementJourneyApplication.class
+br/com/hexagonal/architecture/journey/controller/JourneyController.class
+br/com/hexagonal/architecture/journey/request/JourneyStartRequest.class
