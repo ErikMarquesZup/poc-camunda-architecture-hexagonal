@@ -2,4 +2,8 @@
 .idea
 /application/target/
 /domain/target/
+/engine-camunda/target/
 /infrastructure/target/
+/infrastructure/adapter-producer-commands/target/
+/infrastructure/adapter-consumer-commands/target/
+/infrastructure/adapter-management-journey/target/
