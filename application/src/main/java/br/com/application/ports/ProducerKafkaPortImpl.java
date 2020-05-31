@@ -1,7 +1,7 @@
 package br.com.application.ports;
 
 import br.com.management.kafka.Producer;
-import br.com.management.kafka.message.MessageKafka;
+import message.model.MessageKafka;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -13,5 +13,6 @@ public class JourneyStartRequest {
 
     private String bpmnInstance;
     private String cpf;
+    private String uuid;
 
 }

@@ -1,6 +1,6 @@
 package br.com.application.ports;
 
-import br.com.management.kafka.message.MessageKafka;
+import message.model.MessageKafka;
 
 import java.io.IOException;
 

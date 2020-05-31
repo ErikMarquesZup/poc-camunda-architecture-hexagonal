@@ -1,4 +1,4 @@
-package br.com.management.kafka.message;
+package message.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 public class MessageKafka {
 
-    private Class clazz;
     private String uuid;
     private DomainEvent payload;
     private String topic;

@@ -44,6 +44,7 @@
     <orderEntry type="module" module-name="application" />
     <orderEntry type="module" module-name="adapter-producer-commands" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.10" level="project" />
+    <orderEntry type="module" module-name="domain" />
     <orderEntry type="library" name="Maven: org.springframework.kafka:spring-kafka:2.5.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.2.6.RELEASE" level="project" />

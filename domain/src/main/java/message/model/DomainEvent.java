@@ -1,15 +1,13 @@
-package br.com.management.kafka.message;
+package message.model;
 
 public class DomainEvent {
+    private String uuid;
 
     public DomainEvent(String uuid) {
         this.uuid = uuid;
     }
-
     public DomainEvent() {
     }
-
-    private String uuid;
 
     public String getUuid() {
         return uuid;

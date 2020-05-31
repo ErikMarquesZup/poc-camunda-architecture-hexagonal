@@ -1,4 +1,4 @@
-package br.com.management.kafka.message;
+package message.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,12 +9,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Data
-public class StartJourney extends DomainEvent {
-
+public class StepProcess extends DomainEvent {
+    private String uuid;
     private String type;
+    private String typeOperation;
     private String cpf;
     private String typeDescription;
-    private boolean internalUserTask = true;
+    private boolean systemTask = true;
     private String bpmnInstance;
     private String processInstanceId;
     private String taskId;
@@ -22,5 +23,4 @@ public class StartJourney extends DomainEvent {
     private String activityInstanceId;
     private String currentActivityId;
     private Object infoUserTask;
-
 }

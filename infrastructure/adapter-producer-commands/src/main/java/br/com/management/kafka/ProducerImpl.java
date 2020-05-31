@@ -1,8 +1,8 @@
 package br.com.management.kafka;
 
-import br.com.management.kafka.message.DomainEvent;
-import br.com.management.kafka.message.MessageKafka;
 import lombok.extern.slf4j.Slf4j;
+import message.model.DomainEvent;
+import message.model.MessageKafka;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

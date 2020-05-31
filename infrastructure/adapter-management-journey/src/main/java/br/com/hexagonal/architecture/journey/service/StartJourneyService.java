@@ -2,10 +2,11 @@ package br.com.hexagonal.architecture.journey.service;
 
 import br.com.application.ports.ProducerKafkaPort;
 import br.com.hexagonal.architecture.journey.request.JourneyStartRequest;
-import br.com.management.kafka.constants.TypeComponent;
-import br.com.management.kafka.message.MessageKafka;
-import br.com.management.kafka.message.StartJourney;
+import br.com.hexagonal.architecture.journey.constants.TypeComponent;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import message.model.DomainEvent;
+import message.model.MessageKafka;
+import message.model.StartJourney;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,18 +29,13 @@ public class StartJourneyService {
     public String execute(JourneyStartRequest requestStart) throws IOException {
         String uuid = UUID.randomUUID().toString();
 
-        StartJourney startJourney = StartJourney.builder()
-                .type(TypeComponent.START_EVENT.getEvent())
-                .cpf(requestStart.getCpf())
-                .internalUserTask(Boolean.TRUE)
-                .bpmnInstance(requestStart.getBpmnInstance()).build();
-
-        startJourney.setUuid(uuid);
-
         MessageKafka message = MessageKafka.builder()
-                                           .payload(startJourney)
+                                           .payload(StartJourney.builder()
+                                                   .type(TypeComponent.START_EVENT.getEvent())
+                                                   .cpf(requestStart.getCpf())
+                                                   .uuid(uuid)
+                                                   .bpmnInstance(requestStart.getBpmnInstance()).build())
                                            .topic("command-topics")
-                                           .clazz(StartJourney.class)
                                            .uuid(uuid).build();
 
         kafkaService.sendToKafka(message);

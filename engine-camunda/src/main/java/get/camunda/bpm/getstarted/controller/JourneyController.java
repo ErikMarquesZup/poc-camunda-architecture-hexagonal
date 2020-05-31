@@ -16,7 +16,7 @@ public class JourneyController implements Journey {
 
     @Override
     public ResponseEntity<String> start(JourneyStartRequest requestStart) throws IOException {
-        processInstanceService.startProcessInstance(requestStart.getBpmnInstance());
+        processInstanceService.startProcessInstance(requestStart);
         return ResponseEntity.ok("");
     }
 }

@@ -1,4 +1,4 @@
-package br.com.management.kafka.configuration;
+package get.camunda.bpm.getstarted.camunda.kafka.configuration;
 
 import message.model.DomainEvent;
 import org.apache.kafka.clients.producer.ProducerConfig;

@@ -1,4 +1,4 @@
-package br.com.management.kafka.constants;
+package get.camunda.bpm.getstarted.camunda.constant;
 
 public enum TypeComponent {
 

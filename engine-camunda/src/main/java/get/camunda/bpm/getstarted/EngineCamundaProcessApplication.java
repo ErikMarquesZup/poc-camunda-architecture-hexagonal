@@ -17,10 +17,16 @@
 package get.camunda.bpm.getstarted;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@EnableAutoConfiguration(exclude = { KafkaAutoConfiguration.class })
+@ComponentScan(
+        basePackages = {"get.camunda"}
+)
 public class EngineCamundaProcessApplication {
   public static void main(String... args) {
     SpringApplication.run(EngineCamundaProcessApplication.class, args);
