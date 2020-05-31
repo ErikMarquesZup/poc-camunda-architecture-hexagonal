@@ -21,6 +21,7 @@
         <module>adapter-producer-commands</module>
         <module>adapter-consumer-commands</module>
         <module>adapter-management-journey</module>
+        <module>adapter-persistence</module>
     </modules>
 
 </project>

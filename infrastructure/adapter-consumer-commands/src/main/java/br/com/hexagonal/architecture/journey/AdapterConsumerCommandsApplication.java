@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableFeignClients
+@ComponentScan("br.com")
 public class AdapterConsumerCommandsApplication {
 
     public static void main(String[] args) {

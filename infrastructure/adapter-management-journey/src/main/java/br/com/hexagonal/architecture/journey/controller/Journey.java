@@ -1,6 +1,7 @@
 package br.com.hexagonal.architecture.journey.controller;
 
 import br.com.hexagonal.architecture.journey.request.JourneyStartRequest;
+import br.com.hexagonal.architecture.journey.rocksdb.kv.exception.FindFailedException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +15,6 @@ public interface Journey {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(value = "/start", consumes = MediaType.APPLICATION_JSON_VALUE)
-    ResponseEntity<String> start(@RequestBody JourneyStartRequest requestStart) throws IOException;
+    ResponseEntity<String> start(@RequestBody JourneyStartRequest requestStart) throws IOException, FindFailedException;
 
 }

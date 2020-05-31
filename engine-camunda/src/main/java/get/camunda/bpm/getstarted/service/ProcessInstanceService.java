@@ -6,5 +6,7 @@ import java.io.IOException;
 
 public interface ProcessInstanceService {
 
-    void startProcessInstance(JourneyStartRequest startRequest) throws IOException;
+    String startProcessInstance(JourneyStartRequest startRequest) throws IOException;
+
+    String complete(String id);
 }
