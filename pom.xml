@@ -6,15 +6,20 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <modules>
-    <module>application</module>
-    <module>domain</module>
-    <module>infrastructure</module>
     <module>engine-camunda</module>
+    <module>domain-shared</module>
+    <module>service-starter</module>
+    <module>use-case</module>
+    <module>adapter/in/adapter-in-rest</module>
+    <module>adapter/out/adapter-out-event-management</module>
+    <module>port/in/port-in-use-case</module>
+    <module>port/out/port-out-event-management</module>
   </modules>
 
   <properties>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.compiler.source>1.8</maven.compiler.source>
+    <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
   </properties>
 
   <dependencies>

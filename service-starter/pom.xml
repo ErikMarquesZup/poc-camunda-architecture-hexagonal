@@ -6,35 +6,24 @@
         <artifactId>poc-camunda-architecture-hexagonal</artifactId>
         <groupId>br.com.camunda.bpmn.getstarted</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>engine-camunda</artifactId>
+
+    <artifactId>service-starter</artifactId>
 
     <properties>
-        <camunda.spring-boot.version>3.4.0</camunda.spring-boot.version>
-        <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
-        <spring-kafka.version>2.2.6.RELEASE</spring-kafka.version>
-        <camunda.version>7.12.0</camunda.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.camunda.bpm</groupId>
-                <artifactId>camunda-bom</artifactId>
-                <version>${camunda.version}</version>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -43,34 +32,41 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.camunda.bpm.springboot</groupId>
-            <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
-            <version>${camunda.spring-boot.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.bind</groupId>
-            <artifactId>jaxb-impl</artifactId>
-            <version>2.2.3</version>
-        </dependency>
-        <dependency>
-            <groupId>br.com.camunda.bpmn.getstarted</groupId>
-            <artifactId>domain</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
-            <version>2.5.0.RELEASE</version>
+            <version>2.3.6.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
+
+        <!-- Rest -->
         <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>2.5.0</version>
+            <groupId>br.com.camunda.bpmn.getstarted</groupId>
+            <artifactId>adapter-in-rest</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Rest -->
+        <dependency>
+            <groupId>br.com.camunda.bpmn.getstarted</groupId>
+            <artifactId>adapter-out-event-management</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- Rest -->
+        <dependency>
+            <groupId>br.com.camunda.bpmn.getstarted</groupId>
+            <artifactId>port-in-use-case</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

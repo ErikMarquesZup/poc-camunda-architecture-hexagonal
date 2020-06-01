@@ -1,0 +1,16 @@
+br/com/hexagonal/architecture/domain/model/DomainEventList.class
+br/com/hexagonal/architecture/domain/model/CompleteTask$CompleteTaskBuilder.class
+br/com/hexagonal/architecture/domain/model/UpdateProposal.class
+br/com/hexagonal/architecture/domain/model/CompleteTask.class
+br/com/hexagonal/architecture/domain/model/DomainEvent.class
+br/com/hexagonal/architecture/domain/constant/TypeComponent.class
+br/com/hexagonal/architecture/domain/model/StartJourney$StartJourneyBuilder.class
+br/com/hexagonal/architecture/domain/model/UpdateProposal$UpdateProposalBuilder.class
+br/com/hexagonal/architecture/domain/model/StartJourney.class
+br/com/hexagonal/architecture/domain/model/Fraud$FraudBuilder.class
+br/com/hexagonal/architecture/domain/model/Fraud.class
+br/com/hexagonal/architecture/domain/model/MessageKafka$MessageKafkaBuilder.class
+br/com/hexagonal/architecture/domain/model/StepProcess.class
+br/com/hexagonal/architecture/domain/model/DomainEventList$DomainEventListBuilder.class
+br/com/hexagonal/architecture/domain/model/StepProcess$StepProcessBuilder.class
+br/com/hexagonal/architecture/domain/model/MessageKafka.class

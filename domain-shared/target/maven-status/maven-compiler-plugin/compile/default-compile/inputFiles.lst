@@ -1,0 +1,9 @@
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/UpdateProposal.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/StartJourney.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/Fraud.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/DomainEvent.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/StepProcess.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/DomainEventList.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/MessageKafka.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/constant/TypeComponent.java
+/Users/internalit/Documents/projects/repo-erik-zup/poc-camunda-architecture-hexagonal/domain-shared/src/main/java/br/com/hexagonal/architecture/domain/model/CompleteTask.java

@@ -1,0 +1,3 @@
+br/com/hexagonal/architecture/usecase/port/in/journey/request/JourneyStartRequest$JourneyStartRequestBuilder.class
+br/com/hexagonal/architecture/usecase/port/in/journey/ManagementJourneyUseCase.class
+br/com/hexagonal/architecture/usecase/port/in/journey/request/JourneyStartRequest.class
