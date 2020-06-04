@@ -10,6 +10,7 @@
     <module>domain</module>
     <module>infrastructure</module>
     <module>engine-camunda</module>
+    <module>rocksdb-app</module>
   </modules>
 
   <properties>
